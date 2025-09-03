@@ -14,7 +14,7 @@ class Settings(BaseSettings):
     ragbox_db_table: str = "documents"
 
     ragbox_embedding_model: str = "intfloat/multilingual-e5-small"
-    ragbox_embedding_model_device: Literal["cpu", "mps", "gpu"] = "cpu"
+    ragbox_embedding_model_device: Literal["cpu", "mps", "cuda"] = "cpu"
 
     ragbox_chat_model: str = "azure/Ministral-3B"
     ragbox_chat_history_limit: int = 15
